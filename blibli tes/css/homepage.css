@@ -1,0 +1,622 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Open sans', sans-serif;
+    color: #0894dc;
+}
+
+/* ========== Header ========== */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.searchbar {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.searchbar input[type=text]{
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button-header {
+    display: flex;
+}
+
+.button-header-masuk {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-color: #fff;
+    border-style: solid;
+    background-color: #0894dc;
+    color: #fff;
+}
+
+.button-header-daftar {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border: none;
+}
+
+header {
+
+    background-color: transparent !important;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 0px 0px 20px 20px;
+    height:auto;
+}
+
+
+
+/* ==================== */
+
+/* ========== Banner ========== */
+.bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -10;
+}
+.banner-image {
+    border-radius: 10px;
+    width: 100%;
+    /* margin-bottom: 20px; */
+    /* margin: 10px; */
+
+}
+
+.banner-medium-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.banner-medium-col {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-big-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-image:hover {
+    /* width: 101%; */
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: .1s;
+}
+
+.banner-left {
+    z-index: 10;
+    padding: 10px;
+}
+
+.flash-sale {
+    font-size: xx-large;
+    background-color: transparent !important;
+    text-align: center;
+    color: #0894dc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.button-now {
+    padding: 10px;
+    border: solid;
+    border-color: #0894dc;
+    width: max-content;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: #0894dc;
+    cursor: pointer;
+
+}
+
+.button-now h1, span, p {
+    color: #0894dc;
+    text-align: center ;
+}
+
+
+/* ==================== */
+
+
+/* ========== Card ========== */
+
+.card-title-top {
+    padding: 10px;
+    text-align: center;
+    background-color: #0894dc;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    height: max-content;
+  }
+
+.card {
+    /* float: left; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    min-width: 132px;
+    border-radius: 10px;
+    margin-right: 2%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-fill-container {
+    padding: 0px 16px;
+  }
+
+  .card-image {
+    max-width: 100%;
+    /* height: auto; */
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .card-title {
+    word-wrap: break-word;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    text-align: left;
+  }
+
+  .card-price {
+    font-weight: bold;
+    color: #dc8408;
+    font-size: medium;
+    text-align: left;
+  }
+
+  .card-discount {
+    font-weight: lighter;
+    color: gray;
+    font-size: smaller;
+    padding-bottom: 10px;
+    text-decoration: line-through;
+    text-align: left;
+  }
+
+  .card-button {
+    background-color: #0894dc;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .card-button p {
+    font-size: smaller;
+    padding: 3px;
+    color: white;
+  }
+
+  .card-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #slideRight {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-color: #0894dc;
+    border-style: solid;
+    border-radius: 100%;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  #slideLeft {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-color: #0894dc;
+    border-style: solid;
+    border-radius: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+/* ==================== */
+
+/* ========== Scroll Top ========== */
+
+#scrollTop {
+    /* display: none;  */
+    position: fixed; 
+    bottom: 20px;
+    right: 50px; 
+    z-index: 99; 
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #0894dc;
+    outline: none; 
+    background-color: white; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #scrollTop:hover {
+    background-color: #0894dc; 
+  }
+
+  .scroll-icon {
+    border-radius: 100%;
+  }
+
+  .scroll-icon :hover {
+    color: white;
+}
+
+
+
+/* ==================== */
+
+a {
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+}
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu {
+    float:right;
+    display:none;
+    padding: 18px;
+}
+.mobile-menu:hover {
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color:rgba(108, 42, 124, .9);
+    transition: .3s;
+    z-index: 9999;
+}
+.sidebar ul li a {
+    color: #fff;
+}
+.sidebar ul li {
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+.sidebar ul li:hover {
+    background-color:#42A0A3;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+
+
+/* ========== Footer ========== */
+.collapse {
+    background-color: #0894dc;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.collapse h3 {
+    color: white;
+}
+
+.collapse-toggle {
+    display: block;
+    color: white;
+}
+
+
+.active .collapse:hover {
+    background-color: #054769;
+}
+
+.collapse-content {
+    width: 90%;
+    padding: 0 18px;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    color: #0894dc;
+}
+
+footer {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+footer small{
+    color: #0894dc;
+}
+
+/* ==================== */
+
+html{
+    scroll-behavior: smooth;
+}
+/* @media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+    .col-1{
+        width: 100%;
+    }
+} */
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .container {
+        width: 90%;
+        margin:0 auto;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: normal;
+    }
+    .searchbar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .searchbar input[type=text]{
+        border: none;
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .button-header {
+        display: flex;
+    }
+    
+    .button-header-masuk {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border-color: #fff;
+        border-style: solid;
+        background-color: #0894dc;
+        color: #fff;
+    }
+    
+    .button-header-daftar {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 0px;
+        margin-left: 10px;
+        border-radius: 10px;
+        border-style: solid;
+        border: none;
+    }
+
+    header {
+        background-color: #0894dc;
+        color: white;
+        display: flex;
+        align-items: center;
+        height:70px;
+        padding: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        border-radius: 0;
+    }
+
+
+    /* ========== Banner ========== */
+
+    .banner-image {
+        border-radius: 20px;
+        width: 100%;
+        /* margin-bottom: 20px; */
+        margin: 10px;
+    }
+
+    .banner-medium-row {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner-medium-col {
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-big-col {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .banner-image:hover {
+        /* width: 101%; */
+        box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+        transition: .1s;
+    }
+
+    .flash-sale {
+        font-size: xx-large;
+        background-color: transparent !important;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .button-now {
+        padding: 10px;
+        border: solid;
+        border-color: #fff;
+        width: max-content;
+        border-radius: 20px;
+        margin-top: 15px;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .button-now h1, span, p {
+        color: white;
+    }
+    
+
+    /* ==================== */
+
+    /* ========== Card ========== */
+
+    .card-title-top {
+        padding: 10px;
+        text-align: left;
+        background-color: transparent;
+        color: #0894dc;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    
+    .card {
+        /* float: left; */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        min-width: 182px;
+        border-radius: 10px;
+        margin-right: 2%;
+    }
+    
+    
+
+    /* ==================== */
+
+    /* ========== Scroll Top ========== */
+
+    #scrollTop {
+        /* display: none;  */
+        position: fixed; 
+        bottom: 20px;
+        right: 30px; 
+        z-index: 99; 
+        border-radius: 100%;
+        border-style: solid;
+        border-color: #0894dc;
+        outline: none; 
+        background-color: white; 
+        color: white; 
+        cursor: pointer; 
+        padding: 15px;
+        border-radius: 10px; 
+        font-size: 18px; 
+    }
+    
+
+
+
+    /* ==================== */
+
+    .collapse-content {
+        width: 100%;
+        padding: 0 18px;
+        text-align: center;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        color: #0894dc;
+    }
+
+  }
